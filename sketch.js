@@ -77,10 +77,25 @@ function pick(d) {
 
 
 function setup() {
-  createCanvas(640, 480);
-  console.log(rhymes("bye"));
+  createCanvas(600, 800);
+  rhymesList = rhymes("blue");
+  background(235);
+  fill(0)
+	textAlign(CENTER);
+  textSize(44);
+  greeting = createElement('h2', 'Import blobs:');
+  greeting.position(20, 5);
+	greeting.style("color", "white");
+	
+	instructions = createElement('h2', 'Press SPACE to clear')
+	instructions.position(20, 105);
+	instructions.style("color", "white");
+	
+	instructions2 = createElement('h2', 'Press S to save')
+	instructions2.position(20, 135);
+	instructions2.style("color", "white");
 }
 
 function draw() {
-  background(100);
+
 }
