@@ -122,6 +122,14 @@ function getter() {
   line(575, 775, 25, 775);
   line(25, 775, 25, 25);
 
+  fill(color(Math.floor(Math.random()*55+200), Math.floor(Math.random()*90+10), Math.floor(Math.random()*90+10)))
+  strokeWeight(1);
+  let max = Math.floor(Math.random()*3+3)
+  for(let i = 1; i < max; i++){
+    heart(Math.floor(Math.random()*30+i*(600/max)), Math.floor(Math.random()*40+60), Math.floor(Math.random()*30+60));
+  }
+  flower();
+
   let array = rhymes(input.value().toLowerCase());
   fill(0);
   stroke(0);
@@ -129,12 +137,19 @@ function getter() {
   textSize(44);
   textAlign(CENTER);
   textFont(font);
-  let roll = Math.floor(Math.random()*2);
+  let roll = Math.floor(Math.random()*10);
   if(array.length == 0){
     text("Roses are red", 300, 250);
     text("This word has no rhymes", 300, 350);
     text("Pick another word, and", 300, 450);
     text("Try another time!", 300, 550);
+    return;
+  }
+  if(input.value().toLowerCase() == "blue"){
+    text("Roses are red", 300, 250);
+    text("Violets are " + input.value().toLowerCase(), 300, 350);
+    text("Even an ape is", 300, 450);
+    text("More original than you", 300, 550);
     return;
   }
   if(roll == 0){
@@ -149,13 +164,54 @@ function getter() {
     text("Sugar is sweet", 300, 450);
     text("And so is " + array[Math.floor(Math.random() * array.length)].word, 300, 550);
   }
-
-  fill(color(Math.floor(Math.random()*55+200), Math.floor(Math.random()*90+10), Math.floor(Math.random()*90+10)))
-  let max = Math.floor(Math.random()*3+3)
-  for(let i = 1; i < max; i++){
-    heart(Math.floor(Math.random()*30+i*(600/max)), Math.floor(Math.random()*40+60), Math.floor(Math.random()*30+60));
+  if(roll == 2){
+    text("Roses are red", 300, 250);
+    text("Violets are " + input.value().toLowerCase(), 300, 350);
+    text("You are my favorite", 300, 450);
+    text("But so is " + array[Math.floor(Math.random() * array.length)].word, 300, 550);
   }
-  flower();
+  if(roll == 3){
+    text("Roses are red", 300, 250);
+    text("Violets are " + input.value().toLowerCase(), 300, 350);
+    text("Poems are hard", 300, 450);
+    text("But not as hard as " + array[Math.floor(Math.random() * array.length)].word, 300, 550);
+  }
+  if(roll == 4){
+    text("Roses are red", 300, 250);
+    text("Violets are " + input.value().toLowerCase(), 300, 350);
+    text("Well that's just great", 300, 450);
+    text("I just stepped in " + array[Math.floor(Math.random() * array.length)].word, 300, 550);
+  }
+  if(roll == 5){
+    text("Roses are red", 300, 250);
+    text("Violets are " + input.value().toLowerCase(), 300, 350);
+    text("I love you more", 300, 450);
+    text("Than I love " + array[Math.floor(Math.random() * array.length)].word, 300, 550);
+  }
+  if(roll == 6){
+    text("Roses are red", 300, 250);
+    text("Violets are " + input.value().toLowerCase(), 300, 350);
+    text("If you won't take my heart", 300, 450);
+    text("Then you can have my " + array[Math.floor(Math.random() * array.length)].word, 300, 550);
+  }
+  if(roll == 7){
+    text("Roses are red", 300, 250);
+    text("Violets are " + input.value().toLowerCase(), 300, 350);
+    text("My life is happy", 300, 450);
+    text("Because I have " + array[Math.floor(Math.random() * array.length)].word, 300, 550);
+  }
+  if(roll == 8){
+    text("Roses are red", 300, 250);
+    text("Violets are " + input.value().toLowerCase(), 300, 350);
+    text("If you were a genie", 300, 450);
+    text("I would wish to be " + array[Math.floor(Math.random() * array.length)].word, 300, 550);
+  }
+  if(roll == 9){
+    text("Roses are red", 300, 250);
+    text("Violets are " + input.value().toLowerCase(), 300, 350);
+    text("A world without you", 300, 450);
+    text("Is as empty as " + array[Math.floor(Math.random() * array.length)].word, 300, 550);
+  }
 }
 
 
