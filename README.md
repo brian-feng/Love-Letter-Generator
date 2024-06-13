@@ -22,8 +22,13 @@ This is a program that randomly generates "Roses are red" poems on a randomly ge
 Credits:
 
 Hearts code reworked from https://editor.p5js.org/Mithru/sketches/Hk1N1mMQg
+
 Flowers code reworked from https://editor.p5js.org/son/sketches/SkJJxG2Cm
+
 Pronouncing dictionary taken directly from https://github.com/words/cmu-pronouncing-dictionary/blob/master/index.js
+
 Rhyme code taken and slightly reworked from https://github.com/words/rhymes
+
 Knowledge from Tyler Coleman
+
 Everything else done by Brian Feng
