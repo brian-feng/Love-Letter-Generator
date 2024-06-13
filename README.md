@@ -16,3 +16,14 @@ I sure do have a lot of regrest after making this project. I started this out in
 Artistic Statement:
 
 This is a program that randomly generates "Roses are red" poems on a randomly generated love letter. You are allowed a single word of input. This program was made in Javascript with the help of p5js for the visuals. I made these because Roses are red poems are a slowly dying artform. The limitation of the format is what gives it life, I think. With only four lines and an uncertain yet finite number of words, the writer must express whatever they wish to express. I think it takes a level of cleverness and wit to be able to come up with Roses are red poems on the spot. I, however, don't have that wit. You, perhaps, might not either. Feel free to use this program for whatever you need. It is a very cute joke-ish card to send to friends (hopefully not actual love interests) and an easy way to use all four possible messages in hit game Monsters Seeking Monsters.
+
+----------------------
+
+Credits:
+
+Hearts code reworked from https://editor.p5js.org/Mithru/sketches/Hk1N1mMQg
+Flowers code reworked from https://editor.p5js.org/son/sketches/SkJJxG2Cm
+Pronouncing dictionary taken directly from https://github.com/words/cmu-pronouncing-dictionary/blob/master/index.js
+Rhyme code taken and slightly reworked from https://github.com/words/rhymes
+Knowledge from Tyler Coleman
+Everything else done by Brian Feng
